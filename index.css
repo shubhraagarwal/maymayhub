@@ -76,20 +76,15 @@
     color: #32325d;
     font-weight: 800;
     margin-left:40vw;
-    margin-top: 1em;
+    margin-top: 5rem;
     align-content: center;
 
 }
 .h2 {
     display: grid;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     color:#5D5D32 ;
     font-weight: 800;
-    margin:auto;
-      margin-left:35vw;
+    margin-left:35vw;
 }
 /* Animating the Create awesomeness button */
 .div-animate{
@@ -97,10 +92,8 @@
   padding:0;
   box-sizing: border-box;
   font-family: sans-serif;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  
+  margin-left: 70vh;
+
 }
 .button-animate{
   cursor: pointer;
@@ -147,3 +140,83 @@
 .button-animate:hover span {
   transform: rotate(110deg) translateX(-80px) translateY(-240px);
 }
+/* create awesomeness button ends */
+
+/* Trending memes */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.div-card-bg{
+  background: #d6ffdd;
+}
+.div-card {
+    margin: 3rem;
+    border: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    display: inline-flex;
+}
+.card-row {
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    position: relative;
+    height: 350px;
+    width: 240px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s all ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 5px 4px 15px rgba(196, 196, 196, .4);
+    cursor: pointer;
+}
+.card-image {
+    position: absolute;
+    top: 0;
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: 0.4s all ease-in-out;
+}
+.card-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 0 20px 23px;
+}
+.card-title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+.card-text {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: #000000;
+}
+.card-text:last-child {
+    letter-spacing: unset;
+}
+.card:hover {
+    width: 260px;
+    height: 380px;
+    transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 20px 25px 30px rgba(0, 0, 0, 0.25);
+}
+.card:hover img{
+    transition: all 0.3s;
+    transform: scale(1.4);
+}
+.card:hover .card-image {
+    transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+    height: 100%;
+    opacity: 0.3;
