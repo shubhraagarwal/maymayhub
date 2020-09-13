@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="index.css">
   <!-- Load font awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" href="index.js">
+  <script type="text/javascript" src="index.js">
 
   </script>
   <!-- CSS only -->
@@ -24,19 +24,15 @@
 <body>
   <!-- Code for the navbar -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-    <a class="navbar-brand" href="#">
-      <img src="logo.PNG" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-      Maymay Hub
-    </a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light " id="navbar">
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse sticky" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active " href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link " href="editor.html">Create your own meme</a>
+        <a class="nav-link " href="#">Create your own meme</a>
         <a class="nav-link" href="#">Browse templates</a>
         <div class="subnav">
           <button class="subnavbtn">Browse Memes according to mood <i class="fa fa-caret-down"></i></button>
@@ -50,8 +46,6 @@
             <a href="#love">Love</a>
           </div>
         </div>
-
-  </nav>
   </div>
   </li>
   </div>
@@ -59,14 +53,16 @@
   </nav>
   <!-- Navbar Code ends  -->
   <!-- Body begins -->
-  <h1 class="h1">Maymay Hub</h1>
-  <h2 class="h2">Make great memes online</h2>
-  <div class="div-animate">
-    <button class="button-animate" type="button" name="button" href="editor.html">Create Awesomeness
+  <h1 class="header">Maymay Hub</h1>
+  <h2 class="header">Make great memes online</h2>
+  <div class="div-animate header">
+  <a href = "editor.html">
+      <button class="button-animate" type="button" name="button" >Create Awesomeness
       <span></span></button>
+  </a>
   </div>
-  <h2 class="h2" id="trendingmemes">Trending Memes</h2>
-  <!--Card for the trending memes  -->
+  <h2 class="header" id="trendingmemes">Trending Memes</h2>
+  <!--Cards for the trending memes  -->
   <div class="div-card-bg">
     <div class="div-card">
       <div class="card-row">
@@ -75,7 +71,9 @@
           <div class="card-footer">
             <p class="card-text">Avengers</p>
             <h3 class="card-title">Hulk giving Taco</h3>
-          </div>
+            <a href="avengers.jpg" Download>
+            <button type="button" name="button">Download</button>
+          </a></div>
         </div>
       </div>
     </div>
@@ -192,10 +190,10 @@
     <div class="div-card">
       <div class="card-row">
         <div class="card">
-          <img class="card-image" src="drake.jpg">
+          <img class="card-image" src="mem man.jpg">
           <div class="card-footer">
-            <p class="card-text">Online Classes</p>
-            <h3 class="card-title">NO more school</h3>
+            <p class="card-text">Mem man</p>
+            <h3 class="card-title">Mem man will live forever</h3>
           </div>
         </div>
       </div>
@@ -259,11 +257,10 @@
     <div class="div-card">
       <div class="card-row">
         <div class="card">
-          <img class="card-image" src="avengers.jpg">
+          <img class="card-image" src="office jim.jpeg">
           <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
+            <p class="card-text">Watch what you want</p>
+            <h3 class="card-title">Don't be embarassed</h3>
           </div>
         </div>
       </div>
@@ -271,11 +268,10 @@
     <div class="div-card">
       <div class="card-row">
         <div class="card">
-          <img class="card-image" src="avengers.jpg">
+          <img class="card-image" src="panik kalm panik.jpg" alt="panik kalm panik">
           <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
+            <p class="card-text">panik kalm panik</p>
+            <h3 class="card-title">Arguement with mom</h3>
           </div>
         </div>
       </div>
@@ -283,11 +279,10 @@
     <div class="div-card">
       <div class="card-row">
         <div class="card">
-          <img class="card-image" src="avengers.jpg">
+          <img class="card-image" src="phineasferb.jpeg" alt="Angry Phineas">
           <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
+            <p class="card-text">Grind my gears</p>
+            <h3 class="card-title">Angry Phineas</h3>
           </div>
         </div>
       </div>
@@ -295,11 +290,10 @@
     <div class="div-card">
       <div class="card-row">
         <div class="card">
-          <img class="card-image" src="avengers.jpg">
+          <img class="card-image" src="point.jpg" alt="point">
           <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
+            <p class="card-text">He's got a point</p>
+            <h3 class="card-title">What ended in 1895</h3>
           </div>
         </div>
       </div>
@@ -307,11 +301,10 @@
     <div class="div-card">
       <div class="card-row">
         <div class="card">
-          <img class="card-image" src="avengers.jpg">
+          <img class="card-image" src="simpsons.jpg" alt="simpsons">
           <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
+            <p class="card-text">Simpsons</p>
+            <h3 class="card-title">Napping is life</h3>
           </div>
         </div>
       </div>
@@ -319,11 +312,10 @@
     <div class="div-card">
       <div class="card-row">
         <div class="card">
-          <img class="card-image" src="avengers.jpg">
+          <img class="card-image" src="spongebob theatre.jpg" alt="spongebob theatre">
           <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
+            <p class="card-text">Closest friend</p>
+            <h3 class="card-title">Anxiety</h3>
           </div>
         </div>
       </div>
@@ -331,160 +323,19 @@
     <div class="div-card">
       <div class="card-row">
         <div class="card">
-          <img class="card-image" src="avengers.jpg">
+          <img class="card-image" src="taklu man.jpeg" alt="taklu man">
           <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="div-card">
-      <div class="card-row">
-        <div class="card">
-          <img class="card-image" src="avengers.jpg">
-          <div class="card-footer">
-            <p class="card-text">TRAVEL</p>
-            <h3 class="card-title">Discover the world</h3>
-            <span class="card-author">- John Doe</span>
+            <p class="card-text">Class Cancelled</p>
+            <h3 class="card-title">Recorded Lectures</h3>
           </div>
         </div>
       </div>
     </div>
   </div>
+<div class="div-footer">
+  Stay Tuned!! More awesome memes coming soon!!
+</div>
+
 </body>
 
 </html>
