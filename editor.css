@@ -1,0 +1,217 @@
+:root {
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+* {
+    font: inherit;
+}
+
+
+/* Code to make the navbar stick to the top starts*/
+
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+/* Code to make the navbar stick to the top ends*/
+.nav{
+  margin-bottom: 50px;
+}
+/* Code for the subnav */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: grey;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+ .subnav:hover  {
+    background-color: white;
+  }
+
+  .subnav-content {
+    display: none;
+    position:absolute;
+    left: 0;
+    background-color: #D3D3D3;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .subnav-content a {
+    float: left;
+    color: #484848;
+    text-decoration: none;
+  }
+
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+/* Generator Code */
+h1{
+  align-items: center;
+  padding: 5.2vh 7vw;
+  font-family: fantasy;
+  padding-left: 40rem;
+
+}
+
+.div-generate{
+  border: solid;
+  background: #76533E;
+}
+/* Canvas */
+#meme-canvas {
+    min-width: 300px;
+}
+.canvas{
+  border: solid
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.canvas-holder{
+  min-height: 30vh;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  border: solid;
+  box-sizing: border-box;
+  background: cyan;
+  justify-content: center;
+
+}
+.form{
+  display: inline;
+  position: static;
+  align-items: baseline;
+  align-self: baseline;
+  margin-left: 0;
+
+}
+.text{
+  display: block;
+}
+/* Designing the buttons */
+.div-animate{
+  margin:  0 ;
+  padding:10vh 10vw;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: inline;
+}
+.image-input{
+  display: inline-block;
+  align-items: center;
+  margin: 5vh 5vw ;
+  cursor: pointer;
+}
+.input{
+  cursor: pointer;
+  width: 280px;
+}
+.button-animate{
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin : 60px;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  background: transparent;
+  overflow: hidden;
+  transition: .8s;
+  margin: 0 20vw;
+
+
+}
+.button-animate:nth-child(1){
+  color: #1ea0eb;
+  border:1px solid;
+}
+.button-animate:nth-child(1):hover{
+  background: #1ea0eb;
+  color: #222121;
+}
+
+.button-animate span{
+  display: flex;
+  width: 100px;
+  height: 10px;
+  background: #e5e5e5;
+  fliter: blur(8px);
+  transform: : rotate(110deg) translateX(-80px) translateY(100px);
+  transition: .4s;
+}
+.button-animate:hover span {
+  transform: rotate(110deg) translateX(-80px) translateY(-240px);
+}
+/* Modal */
+.bg-modal{
+  width: 400px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  padding-right: 5rem;
+}
+.modal-content{
+  height: 300px;
+  width: 500px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+}
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	&:hover {
+		color: #666;
+	}

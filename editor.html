@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Maymay Hub</title>
+        <link rel="stylesheet" href="editor.css">
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <!-- Code for the navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav" id="navbar">
+ <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+ <a class="navbar-brand" href="#">
+   <img src="logo.PNG" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+   Maymay Hub
+ </a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+   <div class="navbar-nav">
+     <a class="nav-link active " href="#">Home <span class="sr-only">(current)</span></a>
+     <a class="nav-link " href="#">Create your own meme</a>
+     <a class="nav-link" href="#">Browse templates</a>
+     <div class="subnav">
+       <button class="subnavbtn">Browse Memes according to mood <i class="fa fa-caret-down"></i></button>
+       <div class="subnav-content">
+         <a href="#trendingmemes">Top Memes</a>
+         <a href="#popular">Popular</a>
+         <a href="#youdoyou">You Do You</a>
+         <a href="#happy">Happy</a>
+         <a href="#regret">Regret</a>
+         <a href="#proud">Proud</a>
+         <a href="#love">Love</a>
+       </div>
+     </div>
+
+</nav>
+</div>
+</li>
+</div>
+</div>
+</nav>
+<!-- Navbar Code ends  -->
+<!-- Generator Code -->
+<div class="div-generate">
+
+  <h1>Create those awesome memes here</h1>
+  <div class="canvas-holder">
+  <div class="canvas">
+<canvas id="meme-canvas" title="Right click -> &quot;Save image as...&quot;"></canvas>
+</div>
+</div>
+<div class="text">
+<div class="form">
+
+            <textarea id="top-text" placeholder="Top Text"></textarea>
+            Text size: <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+        </div>
+        <div class="form">
+            <textarea id="bottom-text" placeholder="Bottom Text"></textarea>
+            Text size: <input type="range" id="bottom-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+        </div>
+        <div class="form">
+            <button class="image-input"><input type="file" id="image-input" accept="image/*" class="input"></button>
+        </div>
+        </div>
+        <div class="div-animate">
+            <button id="generate-btn" class="button-animate">Generate! <span></span>   </button>
+        </div>
+  </div>
+
+        <script src="editor.js"></script>
+    </body>
+</html>
