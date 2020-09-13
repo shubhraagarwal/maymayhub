@@ -1,5 +1,7 @@
 /* Code to make the navbar stick to the top starts*/
-
+#navbar{
+  overflow: hidden;
+}
 #navbar a {
   float: left;
   display: block;
@@ -7,11 +9,6 @@
   padding: 14px;
   text-decoration: none;
 }
-
-.content {
-  padding: 16px;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -21,13 +18,12 @@
   padding-top: 60px;
 }
 /* Code to make the navbar stick to the top ends*/
-/* Code for the subnav */
+
   .subnav {
     float: left;
-    overflow: hidden;
+    overflow:hidden;
   }
 
-  /* Subnav button */
   .subnav .subnavbtn {
     font-size: 16px;
     border: none;
@@ -67,32 +63,20 @@
   }
 
 /* Styling the body */
-.h1 {
-    display: block;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: #32325d;
-    font-weight: 800;
-    margin-left:40vw;
-    margin-top: 5rem;
-    align-content: center;
+.header {
+    background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
 
 }
-.h2 {
-    display: grid;
-    color:#5D5D32 ;
-    font-weight: 800;
-    margin-left:35vw;
-}
+
 /* Animating the Create awesomeness button */
 .div-animate{
   margin: 0;
   padding:0;
   box-sizing: border-box;
   font-family: sans-serif;
-  margin-left: 70vh;
+
 
 }
 .button-animate{
@@ -216,7 +200,14 @@
     transition: all 0.3s;
     transform: scale(1.4);
 }
+.div-footer{
+  background-color: #BE67E0;
+  padding: 30px;
+  text-align: center;
+  font-weight: 200;
+}
 .card:hover .card-image {
     transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
     height: 100%;
     opacity: 0.3;
+/* Footer */

@@ -14,21 +14,3 @@ function sticky() {
   }
 }
 // Code to make the navbar sticky ends
-
-// Animating the navbar buttons
-// const buttons = document.querySelectorAll('button');
-//
-// buttons.forEach(btn => {
-//   btn.addEventListener('mouseenter',function(e){
-//     let x = e.clientX - e.target.offsetLeft;
-//     ley y = e.clientY - e.target.offsetTop;
-//     let ripples = document.createElement('span');
-//     ripples.style.left = x + 'px';
-//     ripples.style.top = y + 'px';
-//     this.appendChild(ripples);
-//     setTimeout(() => {
-//       ripples.remove();
-//
-//     }, 1000);
-//   }) ;
-// });
