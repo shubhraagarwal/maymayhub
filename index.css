@@ -9,6 +9,10 @@
   padding: 14px;
   text-decoration: none;
 }
+.color{
+  height: auto;
+  width: auto;
+}
 .sticky {
   position: fixed;
   top: 0;
@@ -130,6 +134,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .div-card-bg{
   background: #d6ffdd;
+}
+.div-card-b1{
+  background:#FFD6F8;
+}.div-card-bg2{
+  background: #91B3DD;
+}.div-card-bg3{
+  background: #91DDB6;
+}.div-card-bg4{
+  background: #95A4DE;
 }
 .div-card {
     margin: 3rem;
