@@ -74,3 +74,8 @@ h1{
     background: black;
     margin-top : 40px;
 }
+.button{
+  justify-content: center;
+  align-items: center;
+  margin-left: 6rem; 
+}
