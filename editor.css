@@ -204,7 +204,7 @@ h1{
 }
 .modal-contents{
   height: 300px;
-  width: 500px;
+  width: 80vw;
   background-color: white;
   text-align: center;
   padding: 20px;
