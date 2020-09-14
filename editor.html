@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Maymay Hub</title>
         <link rel="stylesheet" href="editor.css">
+        <link rel="stylesheet" href="color.css">
         <!-- CSS only -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -26,13 +27,13 @@
  </button>
  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
    <div class="navbar-nav">
-     <a class="nav-link active " href="#">Home <span class="sr-only">(current)</span></a>
-     <a class="nav-link " href="#">Create your own meme</a>
-     <a class="nav-link" href="#">Browse templates</a>
+     <a class="nav-link active " href="index.html">Home <span class="sr-only">(current)</span></a>
+     <a class="nav-link " href="editor.html">Create your own meme</a>
+     <a class="nav-link" href="templates.html">Browse templates</a>
      <div class="subnav">
        <button class="subnavbtn">Browse Memes according to mood <i class="fa fa-caret-down"></i></button>
        <div class="subnav-content">
-         <a href="#trendingmemes">Top Memes</a>
+         <a href="index.html#trendingmemes">Top Memes</a>
          <a href="#popular">Popular</a>
          <a href="#youdoyou">You Do You</a>
          <a href="#happy">Happy</a>
@@ -60,7 +61,6 @@
 </div>
 <div class="text">
 <div class="form">
-
             <textarea id="top-text" placeholder="Top Text"></textarea>
             Text size: <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
         </div>
@@ -72,11 +72,34 @@
             <button class="image-input"><input type="file" id="image-input" accept="image/*" class="input"></button>
         </div>
         </div>
+        <!-- <label for="color-input" id="color-label" style="background-color: red"></label>
+        <input type="checkbox" id="color-input" checked></input>
+
+        <div id="color-picker">
+          <canvas id="color-block" height="150" width="150"></canvas>
+          <canvas id="color-strip" height="150" width="30"></canvas>
+        </div> -->
         <div class="div-animate">
             <button id="generate-btn" class="button-animate">Generate! <span></span>   </button>
         </div>
-  </div>
+      <a href="#" id="downloader" onclick="download()" download="image.png">
+        <div class="div-animate">
+          <a id="download" download="image.png">
+            <button id="download-btn" class="button-animate" onclick="download()">Download!<span></span>   </button></a>
+        </div>
+    </div>
+  <!-- Modal -->
+  <div class="bg-modal">
+	<div class="modal-contents">
 
+		<div class="close">+</div>
+
+
+      </div>
+    </div>
+
+              <!-- <script src="color.js"></script> -->
         <script src="editor.js"></script>
+
     </body>
 </html>

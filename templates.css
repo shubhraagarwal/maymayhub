@@ -1,0 +1,76 @@
+/* Code to make the navbar stick to the top starts*/
+
+#navbar{
+  overflow: hidden;
+}
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+/* Code to make the navbar stick to the top ends*/
+
+  .subnav {
+    float: left;
+    overflow:hidden;
+  }
+
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: grey;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+ .subnav:hover  {
+    background-color: white;
+  }
+
+  .subnav-content {
+    display: none;
+    position:absolute;
+    left: 0;
+    background-color: #D3D3D3;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .subnav-content a {
+    float: left;
+    color: #484848;
+    text-decoration: none;
+  }
+
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+h1{
+  align-items: center;
+  padding: 5.2vh 4vw;
+  font-family: fantasy;
+  padding-left: 30rem;
+  color: white;
+
+}
+.templates{
+    background: black;
+    margin-top : 40px;
+}

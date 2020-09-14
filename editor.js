@@ -1,4 +1,4 @@
-let topTextInput, bottomTextInput, topTextSizeInput, bottomTextSizeInput, imageInput, generateBtn, canvas, ctx;
+let topTextInput, bottomTextInput, topTextSizeInput, bottomTextSizeInput, imageInput, generateBtn, canvas, ctx,x,y;
 
 function generateMeme (img, topText, bottomText, topTextSize, bottomTextSize) {
     let fontSize;
@@ -56,6 +56,7 @@ function init () {
 
     canvas.width = canvas.height = 0;
 
+
     // Generate button click listener
     generateBtn.addEventListener('click', function () {
         // Read image as DataURL using the FileReader API
@@ -70,12 +71,20 @@ function init () {
 }
 
 init();
-
 // modal
-document.getElementById('generate-btn').addEventListener("click", function() {
+document.getElementById('download-btn').addEventListener("click", function() {
 	document.querySelector('.bg-modal').style.display = "flex";
 });
 
 document.querySelector('.close').addEventListener("click", function() {
 	document.querySelector('.bg-modal').style.display = "none";
 });
+
+// downloader
+function download(){
+        var download = document.getElementById("download");
+        var image = document.getElementById("meme-canvas").toDataURL("image/png")
+                    .replace("image/png", "image/octet-stream");
+        download.setAttribute("href", image);
+
+    }

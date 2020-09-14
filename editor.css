@@ -82,24 +82,29 @@
 /* Generator Code */
 h1{
   align-items: center;
-  padding: 5.2vh 7vw;
+  padding: 5.2vh 4vw;
   font-family: fantasy;
-  padding-left: 40rem;
+  padding-left: 30rem;
 
 }
 
 .div-generate{
   border: solid;
   background: #76533E;
+  min-height: 90vh;
 }
 /* Canvas */
 #meme-canvas {
     min-width: 300px;
+    max-width: 60vw;
+    max-height: 60vh;
+    align-items: center;
 }
 .canvas{
   border: solid
   display: inline-block;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .canvas-holder{
@@ -107,10 +112,12 @@ h1{
   height: auto;
   width: auto;
   display: inline-block;
+  margin-left: 30vw;
   border: solid;
   box-sizing: border-box;
   background: cyan;
   justify-content: center;
+  align-items: center;
 
 }
 .form{
@@ -130,7 +137,7 @@ h1{
   padding:10vh 10vw;
   box-sizing: border-box;
   font-family: sans-serif;
-  display: inline;
+  display: flex;
 }
 .image-input{
   display: inline-block;
@@ -190,12 +197,12 @@ h1{
 	height: 100%;
 	position: absolute;
 	top: 0;
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
   padding-right: 5rem;
 }
-.modal-content{
+.modal-contents{
   height: 300px;
   width: 500px;
   background-color: white;
@@ -215,3 +222,13 @@ h1{
 	&:hover {
 		color: #666;
 	}
+/* templates */
+.templates{
+  background: #3E6176;
+  width: auto;
+  height: auto;
+}
+.card-deck{
+  margin-bottom: 10rem;
+    max-width: 50vw;
+}
